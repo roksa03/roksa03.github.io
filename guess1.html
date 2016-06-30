@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Угадайка</title>
+	<link rel="stylesheet" href="style.css">
+	
+<script type="text/javascript">
+    function Play(){
+		var answer = parseInt(Math.random() * 100);
+	
+			while(true){//если хотим чтобы было бесконечное количество попыток
+		var number = parseInt(prompt("Введите Ваш вариант ответа."));
+		if(number==answer){
+			alert("Вы угадали!");
+			break;
+			var isWin = true;
+		}else if(number<answer){
+			alert("Ваше число слишком маленькое");
+		}else if(number>answer){
+			alert("Ваше число слишком большое");
+		}
+	}
+	}
+	
+</script>
+	</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>
+		<a href="#">Угадайка</a><span>/</span>
+		<a href="guess.html">Угадайка мультиплеер</a>
+		
+	</div>
+<div id="content">
+	<h1>Угадайка</h1>
+    <div id="center">
+		<
+
+		<div id="box">
+			<h2>Компьютер загадал число. Нужно угадать это число</h2>
+
+		
+			<a href="#" onclick="Play();">Начать игру</a>
+	
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
